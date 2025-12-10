@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة سباق 3D (Three.js)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-canvas">
+        <div id="ui-container">
+            <div id="score">النقاط: 0</div>
+            <div id="lives">الفرص: ❤️❤️❤️</div>
+        </div>
+    </div>
+    
+    <audio id="background-music" src="background.mp3" loop></audio>
+    <audio id="collision-sound" src="poing.mp3"></audio>
+    <audio id="running-sound" src="run.mp3" loop></audio> 
+    <audio id="jump-sound" src="jump.mp3"></audio> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/VignetteShader.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
